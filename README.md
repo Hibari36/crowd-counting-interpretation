@@ -60,20 +60,72 @@ Considering the increasing number of papers in this field, we roughly summarize 
 Note that all unpublished arXiv papers are not included in [the leaderboard of performance](#performance).
 
 - LCDnet: A Lightweight Crowd Density Estimation Model for Real-time Video Surveillance [[paper](https://arxiv.org/abs/2302.05374)]
+
+    #### ～～Video Crowd Counting skipped～～
+    #### supplement: it seems not to contain many highlights.
+    ***
 - GCNet: Probing Self-Similarity Learning for Generalized Counting Network [[paper](https://arxiv.org/abs/2302.05132)]
+
+    #### A paper for similar object counting with one-shot example.
+    ***
+
 - A Unified Object Counting Network with Object Occupation Prior [[paper](https://arxiv.org/abs/2212.14193)]
+
+    #### the task encounter newly coming data in real world called evolving crowd counting.
+    ***
 - Mask Focal Loss for dense crowd counting with canonical object detection networks [[paper](https://arxiv.org/abs/2212.11542)]
+
+    #### defined a mask focal loss to perform dense crowd counting with canonical object detection mnetwork.
+    ***
 - CountingMOT: Joint Counting, Detection and Re-Identification for Multiple Object Tracking [[paper](https://arxiv.org/abs/2212.05861)]
+
+    #### proposed a new task, counting, detection and re-id, called CountingMOT, applied in crowded scene.
+    ***
 - Progressive Multi-resolution Loss for Crowd Counting [[paper](https://arxiv.org/abs/2212.04127)]
+
+    #### proposed a new L2 Loss meassuring predicted single density map at different scales and proved mathematically traditional L2 loss is its sub-optimal form.
+    ***
 - Counting Like Human: Anthropoid Crowd Counting on Modeling the Similarity of Objects [[paper](https://arxiv.org/abs/2212.02248)]
+
+    #### it requires anthropoid crowd counting with detect the key similarity between objects.
+    ***
 - DASECount: Domain-Agnostic Sample-Efficient Wireless Indoor Crowd Counting via Few-shot Learning [[paper](https://arxiv.org/abs/2211.10040)]
+
+    #### emmmm, what to say, just like its title, it is clear~
+    *** 
 - DroneNet: Crowd Density Estimation using Self-ONNs for Drones [[paper](https://arxiv.org/abs/2211.07137)]
+
+    #### it seem not to contain any highlights.
+    #### However, it reminds me of two drone datasets.
+    #### Real Trash!!!! It is a waste of time!!!!
+    ***
 - Scale-Aware Crowd Counting Using a Joint Likelihood Density Map and Synthetic Fusion Pyramid Network [[paper](https://arxiv.org/abs/2211.06835)]
+
+    #### proposed a loss function to model the annotation error as a guassian distribution and......
+    ***
 - Inception-Based Crowd Counting -- Being Fast while Remaining Accurate [[paper](https://arxiv.org/abs/2210.09796)]
+
+    #### proposed inception-V3 to decrease the calculation and maintain the accuracy
+    ***
 - Crowd Counting on Heavily Compressed Images with Curriculum Pre-Training [[paper](https://arxiv.org/abs/2208.07075)]
+
+    #### emmmm, special field and implicit target. No more explaination.
+    ***
 - MAFNet: A Multi-Attention Fusion Network for RGB-T Crowd Counting [[paper](https://arxiv.org/abs/2208.06761)]
+
+    #### A fution network for RGB and thermal image data.
+    #### its fusion method: seems normal and no more research~
+    ***
 - Multi-scale Feature Aggregation for Crowd Counting [[paper](https://arxiv.org/abs/2208.05256)]
+
+    #### multi-feature aggregation with short connection and skip connnection
+    #### seems its structure is too simple and compared with CVPR2020emmmm
+    ***
 - Redesigning Multi-Scale Neural Network for Crowd Counting [[paper](https://arxiv.org/abs/2208.02894)][[code](https://github.com/ZPDu/Redesigning-Multi-Scale-Neural-Network-for-Crowd-Counting)]![GitHub stars](https://img.shields.io/github/stars/ZPDu/Redesigning-Multi-Scale-Neural-Network-for-Crowd-Counting.svg?logo=github&label=Stars)
+
+    #### designs many complicated structures to solve the scaling problem
+    #### merge multi-scale feature, expert scheme, soft gating and loss fuc. 
+    ***
 
 <details>
 <summary>Earlier ArXiv Papers</summary>
