@@ -379,26 +379,85 @@ Note that all unpublished arXiv papers are not included in [the leaderboard of p
 ### Journal
 - <a name="MVMS"></a>**[MVMS]** Wide-Area Crowd Counting: Multi-View Fusion Networks for Counting in Large Scenes (**IJCV**) [[paper](https://arxiv.org/abs/2012.00946)](extension of [MVMS](#MVMS))
 
-    #### 
+    #### maybe the first one to propose the multi-view counting task based on fusing method. not sure.
     ***
 - <a name="DEFNet"></a>**[DEFNet]** DEFNet: Dual-Branch Enhanced Feature Fusion Network for RGB-T Crowd Counting (**TITS**) [[paper](https://ieeexplore.ieee.org/abstract/document/9889192)][[code](https://github.com/panyi95/DEFNet)]![GitHub stars](https://img.shields.io/github/stars/panyi95/DEFNet.svg?logo=github&label=Stars) 
+
+    #### proposes a module to process RGB-T data......
+    ***
 - <a name="CLRNet"></a>**[CLRNet]** CLRNet: A Cross Locality Relation Network for Crowd Counting in Videos (**T-NNLS**) [[paper](https://ieeexplore.ieee.org/document/9913683)]
+    
+    #### construct location relation between frames and then? allocate different weights to different regions, like crowd and background... well illstrated but...
+    ***
 - <a name="AGCCM"></a>**[AGCCM]** Attention-guided Collaborative Counting (**TIP**) [[paper](https://ieeexplore.ieee.org/document/9906560)]
+
+    #### proposed modules: Attention Guided M, Collaborative Counting M, Bi-transformer (row attention and column attention) uses different branches to collaboratively output a density map.
+    ***
 - <a name="GNA"></a>**[GNA]** Video Crowd Localization with Multi-focus Gaussian Neighborhood Attention and a Large-Scale Benchmark (**TMM**) [[paper](https://ieeexplore.ieee.org/document/9875106)][[code](https://github.com/HopLee6/VSCrowd-Dataset)]![GitHub stars](https://img.shields.io/github/stars/HopLee6/VSCrowd-Dataset.svg?logo=github&label=Stars) 
+
+    #### applies a multi-focus mechanism, however, it is unclear how it works right now.
+    #### furthermore, a new video counting benchmark is proposed.
+    ***
 - <a name="LibraNet+DQN"></a> **[LibraNet+DQN]** Counting Crowd by Weighing Counts: A Sequential Decision-Making Perspective (**T-NNLS**) [[paper](https://ieeexplore.ieee.org/document/9887967/)][[code](https://git.io/libranet)](extension of [LibraNet](#LibraNet))
+
+    #### by applying deep reinforement learning algorithms, the methods reagrd counting as a multi-steps optimization problem...maybe...
+    ***
 - <a name="FIDTM"></a>**[FIDTM]** Focal Inverse Distance Transform Maps for Crowd Localization (**TMM**)[[paper](https://ieeexplore.ieee.org/document/9875106)] [[code](https://github.com/dk-liang/FIDTM)]![GitHub stars](https://img.shields.io/github/stars/dk-liang/FIDTM.svg?logo=github&label=Stars) [[project](https://dk-liang.github.io/FIDTM/)]
+
+    #### to solve the problem in the current density map, proposes a focal inverse distance transform map and a local-maxima-detection-strategy to extract point information.
+    ***
 - <a name="NDConv"></a>**[NDConv]** An Improved Normed-Deformable Convolution for Crowd Counting (**SPL**) [[paper](https://arxiv.org/abs/2206.08084)]
+
+    #### apply normalization on deformable convolution to ensure uniform sampling... nice idea, but the effect is unknown.
+    ***
 - <a name="RAN"></a>**[RAN]** Region-Aware Network: Model Human’s Top-Down Visual Perception Mechanism for Crowd Counting (**Neural Networks**) [[paper](https://arxiv.org/abs/2106.12163)]
+
+    #### applies a top-down structure and tells the story well. I am not sure whether it completes the top-down structure that can allocate attention reasonably.
+    ***
 - <a name="HANet"></a>**[HANet]** Hybrid attention network based on progressive embedding scale-context for crowd counting (**Information Sciences**) [[paper](https://arxiv.org/abs/2106.02324)]
+
+    #### apply paralleling spatial attention and channel attention to sovle the background noise and scaling problems simultaneously.
+    ***
 - <a name="TransCrowd"></a>**[TransCrowd]** TransCrowd: Weakly-Supervised Crowd Counting with Transformer (**Science China Information Sciences**) [[paper](https://arxiv.org/abs/2104.09116)] [[code](https://github.com/dk-liang/TransCrowd)]![GitHub stars](https://img.shields.io/github/stars/dk-liang/TransCrowd.svg?logo=github&label=Stars)
+
+    #### a little bit ridiculous. using transformer to enlarge the receptive field and thought the count supervision is enough...
+    #### transformer also suffer from scale variation and count is a already-tried setting... the reason why we give up it is not the receptive field.
+    ***
 - <a name="STNet"></a>**[STNet]** STNet: Scale Tree Network with Multi-level Auxiliator for Crowd Counting (**TMM**) [[paper](https://ieeexplore.ieee.org/document/9681311)]
+
+    #### aiming at the scaling problem, proposes scale-tree to enhance the scale diversity and parse the scale coarse-to-fine. The auxiliator can assit feature generalization between different levels???
+    ***
 - <a name="SGANet"></a>**[SGANet]** Crowd Counting via Segmentation Guided Attention Networks and Curriculum Loss (**TITS**) [[paper](https://ieeexplore.ieee.org/document/9678116)]
+
+    #### emmm, the revision is to replace vgg with inception-v3??? one more segmentation guided module and a curriculum loss are added......
+    #### maybe the segmentation guided module is worth reading...
+    ***
 - <a name="SSR-HEF"></a>**[SSR-HEF]** SSR-HEF: Crowd Counting with Multi-Scale Semantic Refining and Hard Example Focusing (**TII**) [[paper](https://arxiv.org/abs/2204.07406)]
+
+    #### hard example focusing and multi-scale semantic refining...
+    ***
 - <a name="ECCNAS"></a> **[ECCNAS]** 	ECCNAS: Efficient Crowd Counting Neural Architecture Search (**TOMM**) [[paper](https://dl.acm.org/doi/abs/10.1145/3465455)]
+
+    #### an efficient crowd counting neural architecture search (ECCNAS) framework to search efficient crowd counting network structures
+    #### copy the abstract and know that it is not what I want.
+    ***
 - <a name="SSCC"></a> **[SSCC]** 	Scene-specific crowd counting using synthetic training images (**Pattern Recognition**) [[paper](https://www.sciencedirect.com/science/article/pii/S0031320321006609)]
+
+    #### the idea seems interesting, generating a synthetic scene same wih the image and leanring.
+    #### therefore, we dont need the label, if not misunderstanding.
+    ***
 - <a name="SL-ViT"></a> **[SL-ViT]** Single-Layer Vision Transformers for More Accurate Early Exits with Less Overhead (**Neural Networks**) [[paper](https://arxiv.org/abs/2105.09121)]
+
+    #### a combination of early exits method and ViT which can be applied in regression and classification task.
+    ***
 - <a name="DCST"></a> **[DCST]** Congested Crowd Instance Localization with Dilated Convolutional Swin Transformer (**Neurocomputing**) [[paper](https://arxiv.org/abs/2108.00584)]
-- A survey on deep learning-based single image crowd counting: Network design, loss function and supervisory signal (**Neurocomputing**) [[paper](https://arxiv.org/abs/2012.15685)]
+
+    #### by inserting dilated convolution in different stage of ViT, the model obtains lagre receptive field and get more context information.
+    ***
+- A survey on deep learning-based single image crowd counting: Network design, loss function and supervisory signal (**Neurocomputing**) [[paper](https://arxiv.org/abs/2012.15685)
+
+    #### emmmm, a survy on crowd counting, wow.
+    ***
 
 ### 2021
 ### Conference
@@ -998,7 +1057,7 @@ Please refer to [this page](https://www.crowdbenchmark.com/nwpucrowd.html).
 -
 
 
-### segmentation assited method
+### segmentation assited method (background noise related)
 - <a name="CUT"></a>**[CUT]** Segmentation Assisted U-shaped Multi-scale Transformer for Crowd Counting (**BMVC**) [[paper](https://www.researchgate.net/publication/364030579_Segmentation_Assisted_U-shaped_Multi-scale_Transformer_for_Crowd_Counting)]
 
     #### utilizes the good performance of transformer
