@@ -7,6 +7,7 @@ If you have any problems, suggestions or improvements, please submit the issue o
 * [Datasets](#datasets)
 * [Papers](#papers)
 * [Leaderboard](#leaderboard)
+* [Classification](#classification)
 
 ## Misc
 
@@ -129,8 +130,6 @@ Note that all unpublished arXiv papers are not included in [the leaderboard of p
 
 <details>
 <summary>Earlier ArXiv Papers</summary>
-  
-  
 - Analysis of the Effect of Low-Overhead Lossy Image Compression on the Performance of Visual Crowd Counting for Smart City Applications [[paper](https://arxiv.org/abs/2207.10155)]
 - Counting Varying Density Crowds Through Density Guided Adaptive Selection CNN and Transformer Estimation [[paper](https://arxiv.org/abs/2206.10075)]
 - Indirect-Instant Attention Optimization for Crowd Counting in Dense Scenes [[paper](https://arxiv.org/abs/2206.05648)]
@@ -183,62 +182,205 @@ Note that all unpublished arXiv papers are not included in [the leaderboard of p
 - Crowd Counting with Density Adaption Networks [[paper](https://arxiv.org/abs/1806.10040)]
 - Improving Object Counting with Heatmap Regulation [[paper](https://arxiv.org/abs/1803.05494)][[code](https://github.com/littleaich/heatmap-regulation)]![GitHub stars](https://img.shields.io/github/stars/littleaich/heatmap-regulation.svg?logo=github&label=Stars)
 - Structured Inhomogeneous Density Map Learning for Crowd Counting [[paper](https://arxiv.org/abs/1801.06642)]
-
 </details>
 
 ### 2023
 ### Conference
 - <a name=""></a> Optimal Transport Minimization: Crowd Localization on Density Maps for Semi-Supervised Counting (**CVPR**)[[paper]()]
+
+    #### The paper is missing. Does anyone know why?
+    ***
 - <a name="DGCC"></a>**[DGCC]** Domain-general Crowd Counting in Unseen Scenarios (**AAAI**)[[paper](https://arxiv.org/abs/2212.02573)] [[code](https://github.com/ZPDu/Domain-general-Crowd-Counting-in-Unseen-Scenarios)]![GitHub stars](https://img.shields.io/github/stars/ZPDu/Domain-general-Crowd-Counting-in-Unseen-Scenarios.svg?logo=github&label=Stars)
+
+    #### Domain Generalization: proposes to use feature combination to extrat domain in-variant feature.
+    ***
 - <a name="SAFECount"></a>**[SAFECount]** Few-Shot Object Counting With Similarity-Aware Feature Enhancement (**WACV**)[[paper](https://arxiv.org/abs/2201.08959)] [[code](https://github.com/zhiyuanyou/SAFECount)]![GitHub stars](https://img.shields.io/github/stars/zhiyuanyou/SAFECount.svg?logo=github&label=Stars)
+
+    #### using support image and query image to perform few-shot corwd counting 
+    ***
 - <a name="DMCNet"></a>**[DMCNet]** Dynamic Mixture of Counter Network for Location-Agnostic Crowd Counting (**WACV**)[[paper](https://openaccess.thecvf.com/content/WACV2023/papers/Wang_Dynamic_Mixture_of_Counter_Network_for_Location-Agnostic_Crowd_Counting_WACV_2023_paper.pdf)]
+
+    #### local-agnostic crowd counting task: combined CNN and MLP...
+    ***
 
 ### Journal
 - Revisiting Crowd Counting: State-of-the-art, Trends, and Future Perspectives (**Image and Vision Computing**) [[paper](https://arxiv.org/abs/2209.07271)]
+
+    #### A survey paper, relatively new, maybe can relief my work.
+    ***
 - <a name="MTCP"></a>**[MTCP]** Multi-Task Credible Pseudo-Label Learning for Semi-supervised Crowd Counting (**T-NNLS**) [[paper]()] [[code](https://github.com/ljq2000/MTCP)]![GitHub stars](https://img.shields.io/github/stars/ljq2000/MTCP.svg?logo=github&label=Stars)
+
+    #### pseudo-label learning with multi-task: density map prediction, binary segmentation and confidence prediction. propose to using more various pseudo labeled data.
+    ***
 - <a name="STGN"></a>**[STGN]** Spatial-Temporal Graph Network for Video Crowd Counting (**T-CSVT**) [[paper](https://ieeexplore.ieee.org/document/9810269)] [[code](https://github.com/wuzhe71/STGN)]![GitHub stars](https://img.shields.io/github/stars/wuzhe71/STGN.svg?logo=github&label=Stars)
+
+    #### video crowd counting: construct spatial-temporal graph, tempora path graph, spatial pixel graph on each pyramid scale.
+    ***
 - <a name="CmCaF"></a>**[CmCaF]** RGB-D Crowd Counting With Cross-Modal Cycle-Attention Fusion and Fine-Coarse Supervision (**TII**) [[paper](https://ieeexplore.ieee.org/document/9765786)]
+
+    #### RGB-D fusion method with cycle-attention fusion. It's obvious. So no more interpretation.
+    ***
 - <a name="STC-Crowd"></a>**[STC-Crowd]** Semi-supervised Crowd Counting with Spatial Temporal Consistency and Pseudo-label Filter (**T-CSVT**)[[paper](https://ieeexplore.ieee.org/document/10032602)]
+
+    #### self-supervised crowd counting: utilizes spatial-temporal consistency to constrain generated pseudo density maps and uses filter to allocate weight for pseudo label. 
+    ***
 - <a name="LMSFFNet"></a>**[LMSFFNet]** A Lightweight Multiscale Feature Fusion Network for Remote Sensing Object Counting (**TGRS**) [[paper](https://ieeexplore.ieee.org/document/10021616)]
+
+    #### proposes a lightweight structure to solve the multi-scale problem: a mobileViT and xxx.
+    ***
 - <a name="DDMD"></a>**[DDMD]** Deformable Density Estimation via Adaptive Representation (**TIP**) [[paper](https://ieeexplore.ieee.org/document/10036469)]
+
+    #### requires bounding boxes to generate adaptive density map, constrain a new branch and utilizes dilated CNN to extract multi scale problem.
+    #### obatin performance improvement on the dataset with bounding box annotations...
+    ***
 
 ### 2022
 ### Conference
 - <a name="CSS-CCNN"></a>**[CSS-CCNN]** Completely Self-Supervised Crowd Counting via Distribution Matching (**ECCV**) [[paper](https://arxiv.org/abs/2009.06420)][[code](https://github.com/val-iisc/css-ccnn)]![GitHub stars](https://img.shields.io/github/stars/val-iisc/css-ccnn.svg?logo=github&label=Stars)
+
+    #### nature crowd follows a power law distribution and perform complertely self-supervised crowd counting...
+    ***
 - <a name="TSFADet"></a>**[TSFADet]** Translation, Scale and Rotation: Cross-Modal Alignment Meets RGB-Infrared Vehicle Detection (**ECCV**) [[paper](https://arxiv.org/abs/2209.13801)]
+
+    #### multi-modal alignment in RGB-Infrared Vehicle Detection.
+    #### the misalignment represent in xxx and they design a module to relief it.
+    ***
 - <a name="CSCA"></a>**[CSCA]** Spatio-channel Attention Blocks for Cross-modal Crowd Counting (**ACCV**) [[paper](https://arxiv.org/abs/2210.10392)] [[code](https://github.com/VCLLab/CSCA)]![GitHub stars](https://img.shields.io/github/stars/VCLLab/CSCA.svg?logo=github&label=Stars)
+
+    #### introduces multi-modal problem in crowd counting, however, in most scenes, data with other modals are unavaliable... and spatial-channel attention emmm seems normal tec.
+    ***
 - <a name="CUT"></a>**[CUT]** Segmentation Assisted U-shaped Multi-scale Transformer for Crowd Counting (**BMVC**) [[paper](https://www.researchgate.net/publication/364030579_Segmentation_Assisted_U-shaped_Multi-scale_Transformer_for_Crowd_Counting)]
+
+    #### utilizes the good performance of transformer
+    #### proposes a crowd u-transformer
+    #### proposes a loss function to focus more on the foreground.
+    ***
 - <a name="MSDTrans"></a>**[MSDTrans]** RGB-T Multi-Modal Crowd Counting Based on Transformer (**BMVC**)[[paper](https://arxiv.org/abs/2301.03033)] [[code](https://github.com/liuzywen/RGBTCC)]![GitHub stars](https://img.shields.io/github/stars/liuzywen/RGBTCC.svg?logo=github&label=Stars)
+
+    #### perform RGB-IR crowd counting with transformer...multi-modal fusion
+    ***
 - <a name="LoViTCrowd"></a>**[LoViTCrowd]** Improving Local Features with Relevant Spatial Information by Vision Transformer for Crowd Counting (**BMVC**) [[paper](https://bmvc2022.mpi-inf.mpg.de/0729.pdf)] [[code](https://github.com/nguyen1312/LoViTCrowd)]![GitHub stars](https://img.shields.io/github/stars/nguyen1312/LoViTCrowd.svg?logo=github&label=Stars)
+
+    #### an application of ViT, and then?
+    ***
 - <a name="SPDCN"></a>**[SPDCN]** Scale-Prior Deformable Convolution for Exemplar-Guided Class-Agnostic Counting (**BMVC**) [[paper](https://bmvc2022.mpi-inf.mpg.de/0313.pdf)]
+
+    #### solves the scaling problem in class-agnostic counting with deformable convolution and scale-sensitive loss function.
+    ***
 - <a name="PAP"></a>**[PAP]** Harnessing Perceptual Adversarial Patches for Crowd Counting (**ACM CCS**) [[paper](https://arxiv.org/abs/2109.07986)]
+
+    #### utilizes the adversarial examples to assist the model to learn scale-invariant feature.
+    #### the proposed perceptual adversarial patches show good performance on adversarial learning and generalization task.
+    ***
 - <a name="CLTR"></a>**[CLTR]** An End-to-End Transformer Model for Crowd Localization (**ECCV**) [[paper](https://arxiv.org/abs/2202.13065)] [[code](https://github.com/dk-liang/CLTR)]![GitHub stars](https://img.shields.io/github/stars/dk-liang/CLTR.svg?logo=github&label=Stars)[[project](https://dk-liang.github.io/CLTR/)]
+
+    #### apply set prediction paradigm for the crowd localization task with KMO based macher.
+    ***
 - <a name="CF-MVCC"></a>**[CF-MVCC]** Calibration-free Multi-view Crowd Counting (**ECCV**) [[paper](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136690224.pdf)]
+
+    #### multi-view corwd counting method, waiting for supplementary...
+    ***
 - <a name="DC"></a>**[DC]** Discrete-Constrained Regression for Local Counting Models (**ECCV**) [[paper](https://arxiv.org/abs/2207.09865)]
+
+    #### finds the reasons why classification methods show better performance than regression methods: inaccurate dot annotation and inappropriate gaussian kernel.
+    #### futhermore, proposes a discrete regression method to avoid these problems.
+    ***
 - <a name="DMBA"></a>**[DMBA]** Backdoor Attacks on Crowd Counting (**ACM MM**) [[paper](https://arxiv.org/abs/2205.11398)][[code](https://github.com/Nathangitlab/Backdoor-Attacks-on-Crowd-Counting)]![GitHub stars](https://img.shields.io/github/stars/Nathangitlab/Backdoor-Attacks-on-Crowd-Counting.svg?logo=github&label=Stars)
+
+    #### fine-grained counting? seems a challenaging task... counting and analyze the attributes.
+    ***
 - <a name="DACount"></a>**[DACount]** Semi-supervised-Crowd-Counting-via-Density-Agency (**ACM MM**) [[paper](https://arxiv.org/abs/2209.02955)][[code](https://github.com/LoraLinH/Semi-supervised-Crowd-Counting-via-Density-Agency)]![GitHub stars](https://img.shields.io/github/stars/LoraLinH/Semi-supervised-Crowd-Counting-via-Density-Agency.svg?logo=github&label=Stars)
+
+    #### an agency-guided semi-supervised counting methods...
+    ***
 - <a name="ChfL"></a>**[ChfL]** Crowd Counting in the Frequency Domain (**CVPR**) [[paper](https://openaccess.thecvf.com/content/CVPR2022/papers/Shu_Crowd_Counting_in_the_Frequency_Domain_CVPR_2022_paper.pdf)][[code](https://github.com/wbshu/Crowd_Counting_in_the_Frequency_Domain)]![GitHub stars](https://img.shields.io/github/stars/wbshu/Crowd_Counting_in_the_Frequency_Domain.svg?logo=github&label=Stars)
+
+    #### performs crowd counting in the frequency domain
+    #### proposes a loss function and prove its priority with theoretical analysis.
+    ***
 - <a name="GauNet"></a>**[GauNet]** Rethinking Spatial Invariance of Convolutional Networks for Object Counting (**CVPR**) [[paper](https://arxiv.org/abs/2206.05253)][[code](https://github.com/zhiqic/Rethinking-Counting)]![GitHub stars](https://img.shields.io/github/stars/zhiqic/Rethinking-Counting.svg?logo=github&label=Stars)
+
+    #### a thinking about the spatial invariance, and a new structure to replace the tradictional convolution filter. However, it not introduced in detail in the abstract.
+    #### the paper can be interpreted later.
+    ***
 - <a name="DR.VIC"></a>**[DR.VIC]** DR.VIC: Decomposition and Reasoning for Video Individual Counting (**CVPR**) [[paper](https://crabwq.github.io/pdf/2022%20DR.VIC.pdf)][[code](https://github.com/taohan10200/DRNet)]![GitHub stars](https://img.shields.io/github/stars/taohan10200/DRNet.svg?logo=github&label=Stars)
+
+    #### amazing! reasoning related work! however, it is in video crowd counting
+    #### reasons the pedestrain transport flow, it seem related but different to MOT.
+    ***
 - <a name="CDCC"></a>**[CDCC]** Leveraging Self-Supervision for Cross-Domain Crowd Counting (**CVPR**) [[paper](https://arxiv.org/abs/2103.16291)][[code](https://github.com/weizheliu/Cross-Domain-Crowd-Counting)]![GitHub stars](https://img.shields.io/github/stars/weizheliu/Cross-Domain-Crowd-Counting.svg?logo=github&label=Stars)
+
+    #### training with the synthetic data and transfer the model to the real data.
+    ***
 - <a name="MAN"></a>**[MAN]** Boosting Crowd Counting via Multifaceted Attention (**CVPR**) [[paper](https://arxiv.org/abs/2203.02636)][[code](https://github.com/LoraLinH/Boosting-Crowd-Counting-via-Multifaceted-Attention)]![GitHub stars](https://img.shields.io/github/stars/LoraLinH/Boosting-Crowd-Counting-via-Multifaceted-Attention.svg?logo=github&label=Stars)
+
+    #### revision in current ViT: incorporates global attention from a vanilla transformer, learnable local attention, and instance attention into the transformer. the reason for its efficiency not clear.
+    ***
 - <a name="BLA"></a>**[BLA]** Bi-level Alignment for Cross-Domain Crowd Counting (**CVPR**) [[paper](https://arxiv.org/abs/2205.05844)][[code](https://github.com/Yankeegsj/BLA)]![GitHub stars](https://img.shields.io/github/stars/Yankeegsj/BLA.svg?logo=github&label=Stars)
+
+    #### bi-level alignment: task-driven data alignment, fine-grained feature alignment(foreground and background).
+    ### maybe the fine-grained feature alignment can be referred.
+    ***
 - <a name="BMNet"></a>**[BMNet]** Represent, Compare, and Learn: A Similarity-Aware Framework for Class-Agnostic Counting (**CVPR**)[[paper](https://arxiv.org/abs/2203.08354)][[code](https://github.com/flyinglynx/Bilinear-Matching-Network)]![GitHub stars](https://img.shields.io/github/stars/flyinglynx/Bilinear-Matching-Network.svg?logo=github&label=Stars)
+
+    #### well, class-agnostic counting is preferred to be disscussed later.
+    ***
 - <a name=""></a> Fine-Grained Counting with Crowd-Sourced Supervision (**CVPRW**) [[paper](https://arxiv.org/abs/2205.11398)]
+
+    #### introduced a fine-grained counting dataset for crowd-sourced annotations.
+    ***
 - <a name="CrowdFormer"></a>**[CrowdFormer]** CrowdFormer: An Overlap Patching Vision Transformer for Top-Down Crowd Counting (**IJCAI**)[[paper](https://www.ijcai.org/proceedings/2022/0215.pdf)]
+
+    #### using Patched ViT to solve the scaling problem with both the dot map and density map annotation in a top-down manner.
+    ***
 - <a name="WSCNN"></a>**[WSCNN]** Single Image Object Counting and Localizing using Active-Learning (**WACV**) [[paper](https://openaccess.thecvf.com/content/WACV2022/papers/Huberman-Spiegelglas_Single_Image_Object_Counting_and_Localizing_Using_Active-Learning_WACV_2022_paper.pdf)]
+
+    #### an active learning method for object counting and localization.
+    #### the definition of active learning......
+    ***
 - <a name="IS-Count"></a>**[IS-Count]** IS-Count: Large-Scale Object Counting from Satellite Images with Covariate-Based Importance Sampling (**AAAI**) [[paper](https://arxiv.org/abs/2112.09126)][[code](https://github.com/sustainlab-group/IS-Count)]![GitHub stars](https://img.shields.io/github/stars/sustainlab-group/IS-Count.svg?logo=github&label=Stars)
+
+    #### emmmmm, sampling based counting, saving but the confidence is doubtful.
+    ***
 - <a name="STAN"></a>**[STAN]** A Spatio-Temporal Attentive Network for Video-Based Crowd Counting (**ISCC**) [[paper](https://arxiv.org/abs/2208.11339)]
+
+    #### only illustrates that they use spatial-temporal attention to imporve counting and localization precision...
+    ***
 - <a name="LARL"></a>**[LARL]** Label-Aware Ranked Loss for robust People Counting using Automotive in-cabin Radar (**ICASSP**) [[paper](https://arxiv.org/abs/2110.05876v2)]
+
+    #### design a label aware rank loss for in-cabin radar scene.
+    #### since the scene is different to our requirement, skip it.
+    ***
 - <a name="ESA-Net"></a>**[ESA-Net]** Enhancing and Dissecting Crowd Counting By Synthetic Data (**ICASSP**) [[paper](https://arxiv.org/abs/2201.08992)]
+
+    #### with parameterized realization, the dataset can improve the performance of many benchmark and research the influence of different factors.
+    ***
 - <a name="MPS"></a>**[MPS]** Multiscale Crowd Counting and Localization By Multitask Point Supervision (**ICASSP**) [[paper](https://arxiv.org/abs/2202.09942)][[code](https://github.com/RCVLab-AiimLab/crowd_counting)]![GitHub stars](https://img.shields.io/github/stars/RCVLab-AiimLab/crowd_counting.svg?logo=github&label=Stars)
+
+    #### performs counting and localization together...then? by fusing features from multi-layer?
+    ***
 - <a name="TAFNet"></a>**[TAFNet]** TAFNet: A Three-Stream Adaptive Fusion Network for RGB-T Crowd Counting (**ISCAS**) [[paper](https://arxiv.org/abs/2202.08517)][[code](https://github.com/TANGHAIHAN/TAFNet)]![GitHub stars](https://img.shields.io/github/stars/TANGHAIHAN/TAFNet.svg?logo=github&label=Stars)
+
+    #### fusion method for RGB-T images. thress-stream: RGB-T/RGB/T......
+    ***
 - <a name="HDNet"></a>**[HDNet]** HDNet: A Hierarchically Decoupled Network for Crowd Counting (**ICME**) [[paper](https://arxiv.org/abs/2212.05722)]
+
+    #### decomposes the image counting task into background decomposing, foreground density decomposing, and introduces three interactions to compensate for the ignored correlation between the subtasks.
+    ***
 - <a name="SSDA"></a>**[SSDA]** Self-supervised Domain Adaptation in Crowd Counting (**ICIP**) [[paper](https://arxiv.org/abs/2206.03431)]
+
+    #### introduce a domain adaptation method. unknown its priority however.
+    ***
 - <a name="FusionCount"></a>**[FusionCount]** FusionCount: Efficient Crowd Counting via Multiscale Feature Fusion (**ICIP**) [[paper](https://arxiv.org/abs/2202.13660)][[code](https://github.com/YimingMa/FusionCount)]![GitHub stars](https://img.shields.io/github/stars/YimingMa/FusionCount.svg?logo=github&label=Stars)
+
+    #### fuses multi-scale feature to enlarge the receptive fields, however, I doubt the method has been proposed before.
+    ***
 
 ### Journal
 - <a name="MVMS"></a>**[MVMS]** Wide-Area Crowd Counting: Multi-View Fusion Networks for Counting in Large Scenes (**IJCV**) [[paper](https://arxiv.org/abs/2012.00946)](extension of [MVMS](#MVMS))
+
+    #### 
+    ***
 - <a name="DEFNet"></a>**[DEFNet]** DEFNet: Dual-Branch Enhanced Feature Fusion Network for RGB-T Crowd Counting (**TITS**) [[paper](https://ieeexplore.ieee.org/abstract/document/9889192)][[code](https://github.com/panyi95/DEFNet)]![GitHub stars](https://img.shields.io/github/stars/panyi95/DEFNet.svg?logo=github&label=Stars) 
 - <a name="CLRNet"></a>**[CLRNet]** CLRNet: A Cross Locality Relation Network for Crowd Counting in Videos (**T-NNLS**) [[paper](https://ieeexplore.ieee.org/document/9913683)]
 - <a name="AGCCM"></a>**[AGCCM]** Attention-guided Collaborative Counting (**TIP**) [[paper](https://ieeexplore.ieee.org/document/9906560)]
@@ -840,3 +982,66 @@ Please refer to [this page](https://www.crowdbenchmark.com/nwpucrowd.html).
 | 2019--BMVC | [E3D](#E3D)                             | 1.64 | 2.13 |
 | 2021--TPAMI| [LA-Batch](#LA-Batch) (backbone CSRNet) | 1.34 | 1.60 |
 | 2019--WACV | **[SAAN](#SAAN)**                       | **1.28** | **1.68** |
+
+
+## classification
+
+### weakly/self/semi-supervised method
+-
+
+### domain adaption/generalization
+- <a name="BLA"></a>**[BLA]** Bi-level Alignment for Cross-Domain Crowd Counting (**CVPR**) [[paper](https://arxiv.org/abs/2205.05844)][[code](https://github.com/Yankeegsj/BLA)]![GitHub stars](https://img.shields.io/github/stars/Yankeegsj/BLA.svg?logo=github&label=Stars)
+
+    #### bi-level alignment: task-driven data alignment, fine-grained feature alignment(foreground and background).
+    ### maybe the fine-grained feature alignment can be referred.
+    ***
+-
+
+
+### segmentation assited method
+- <a name="CUT"></a>**[CUT]** Segmentation Assisted U-shaped Multi-scale Transformer for Crowd Counting (**BMVC**) [[paper](https://www.researchgate.net/publication/364030579_Segmentation_Assisted_U-shaped_Multi-scale_Transformer_for_Crowd_Counting)]
+
+    #### utilizes the good performance of transformer
+    #### proposes a crowd u-transformer
+    #### proposes a loss function to focus more on the foreground.
+    ***
+
+### reasoning based method
+-
+
+### scale-related method
+- <a name="LoViTCrowd"></a>**[LoViTCrowd]** Improving Local Features with Relevant Spatial Information by Vision Transformer for Crowd Counting (**BMVC**) [[paper](https://bmvc2022.mpi-inf.mpg.de/0729.pdf)] [[code](https://github.com/nguyen1312/LoViTCrowd)]![GitHub stars](https://img.shields.io/github/stars/nguyen1312/LoViTCrowd.svg?logo=github&label=Stars)
+
+    #### an application of ViT, and then?
+    ***
+
+### multi-modal method
+- <a name="MSDTrans"></a>**[MSDTrans]** RGB-T Multi-Modal Crowd Counting Based on Transformer (**BMVC**)[[paper](https://arxiv.org/abs/2301.03033)] [[code](https://github.com/liuzywen/RGBTCC)]![GitHub stars](https://img.shields.io/github/stars/liuzywen/RGBTCC.svg?logo=github&label=Stars)
+
+    #### perform RGB-IR crowd counting with transformer...multi-modal fusion
+    ***
+
+### class-agnostic counting method
+- <a name="SPDCN"></a>**[SPDCN]** Scale-Prior Deformable Convolution for Exemplar-Guided Class-Agnostic Counting (**BMVC**) [[paper](https://bmvc2022.mpi-inf.mpg.de/0313.pdf)]
+
+    #### solves the scaling problem in class-agnostic counting with deformable convolution and scale-sensitive loss function.
+    ***
+
+### multi-view crowd counting
+-
+
+### crowd localization
+- <a name="CLTR"></a>**[CLTR]** An End-to-End Transformer Model for Crowd Localization (**ECCV**) [[paper](https://arxiv.org/abs/2202.13065)] [[code](https://github.com/dk-liang/CLTR)]![GitHub stars](https://img.shields.io/github/stars/dk-liang/CLTR.svg?logo=github&label=Stars)[[project](https://dk-liang.github.io/CLTR/)]
+
+    #### apply set prediction paradigm for the crowd localization task with KMO based macher.
+    ***
+-
+
+### other method
+- <a name="DC"></a>**[DC]** Discrete-Constrained Regression for Local Counting Models (**ECCV**) [[paper](https://arxiv.org/abs/2207.09865)]
+
+    #### finds the reasons why classification methods show better performance than regression methods: inaccurate dot annotation and inappropriate gaussian kernel.
+    #### futhermore, proposes a discrete regression method to avoid these problems.
+    ***
+
+### mapping and counting: a new trial
