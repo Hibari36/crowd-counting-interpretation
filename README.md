@@ -462,37 +462,139 @@ Note that all unpublished arXiv papers are not included in [the leaderboard of p
 ### 2021
 ### Conference
 - <a name="GNet"></a>**[GNet]** Gaussian map predictions for 3D surface feature localisation and counting (**BMVC**) [[paper](https://www.bmvc2021-virtualconference.com/assets/papers/1417.pdf)]
+
+    #### strawberry 3D surface counting... really pratical research... however, totally different application.
+    ***
 - <a name="PFSNet"></a>**[PFSNet]** Robust Crowd Counting via Image Enhancement and Dynamic Feature Selection (**BMVC**) [[paper](https://www.bmvc2021-virtualconference.com/assets/papers/1387.pdf)]
+
+    #### according to the estimated density, adjust the receptive field dynamically and adjust the images to a uniform status.
+    #### it is said to outperform SASNet emmmmmmmmmmmmmmmmm. are these enough?
+    ***
 - <a name="URC"></a>**[URC]** Crowd Counting With Partial Annotations in an Image (**ICCV**) [[paper](https://openaccess.thecvf.com/content/ICCV2021/papers/Xu_Crowd_Counting_With_Partial_Annotations_in_an_Image_ICCV_2021_paper.pdf)]
+
+    #### an interesting setting, with only 10% annotation, the author design a structure to learn the similarity between the regions which are annotated and not annotated.
+    #### the experiments show that even with only 10% annoations, the model can keep a relatively high precision.
+    ***
 - <a name="MFDC"></a>**[MFDC]** Exploiting Sample Correlation for Crowd Counting With Multi-Expert Network (**ICCV**) [[paper](https://openaccess.thecvf.com/content/ICCV2021/papers/Liu_Exploiting_Sample_Correlation_for_Crowd_Counting_With_Multi-Expert_Network_ICCV_2021_paper.pdf)]
+
+    #### proposes a method to metric data similarity to find the data to train in the expert network.
+    #### applies multi-expert method for crowd counting task.
+    ***
 - <a name="SDNet"></a>**[SDNet]** Towards A Universal Model for Cross-Dataset Crowd Counting (**ICCV**) [[paper](https://openaccess.thecvf.com/content/ICCV2021/papers/Ma_Towards_a_Universal_Model_for_Cross-Dataset_Crowd_Counting_ICCV_2021_paper.pdf)]
+
+    #### wishes to generate a universal model for all scenes and uses wasserstein distance based loss function to measure the scaling factor.
+    ***
 - <a name="P2PNet"></a>**[P2PNet]** Rethinking Counting and Localization in Crowds:A Purely Point-Based Framework (**ICCV(Oral)**) [[paper](https://arxiv.org/abs/2107.12746)][[code](https://github.com/TencentYoutuResearch/CrowdCounting-P2PNet)]![GitHub stars](https://img.shields.io/github/stars/TencentYoutuResearch/CrowdCounting-P2PNet.svg?logo=github&label=Stars)
+
+    #### proposes a point based counting framework. maybe the first one to utilize pure point annotations.
+    ***
 - <a name="UEPNet"></a>**[UEPNet]** Uniformity in Heterogeneity:Diving Deep into Count Interval Partition for Crowd Counting (**ICCV**) [[paper](https://arxiv.org/abs/2107.12619)][[code](https://github.com/TencentYoutuResearch/CrowdCounting-UEPNet)]![GitHub stars](https://img.shields.io/github/stars/TencentYoutuResearch/CrowdCounting-UEPNet.svg?logo=github&label=Stars)
+
+    #### transfer the regression problem into a classification problem by index the image part into a counting interval.
+    ***
 - <a name="SUA"></a>**[SUA]** Spatial Uncertainty-Aware Semi-Supervised Crowd Counting (**ICCV**) [[paper](https://arxiv.org/abs/2107.13271)][[code](https://github.com/smallmax00/SUA_crowd_counting)]![GitHub stars](https://img.shields.io/github/stars/smallmax00/SUA_crowd_counting.svg?logo=github&label=Stars)
+
+    #### a semi-supervised method with spatial-uncertainty. its illustration is unclear.
+    ***
 - <a name="DKPNet"></a>**[DKPNet]** Variational Attention: Propagating Domain-Specific Knowledge for Multi-Domain Learning in Crowd Counting (**ICCV**) [[paper](https://arxiv.org/abs/2108.08023)][[code](https://github.com/Zhaoyi-Yan/DKPNet)]![GitHub stars](https://img.shields.io/github/stars/Zhaoyi-Yan/DKPNet.svg?logo=github&label=Stars)
+
+    #### task: multi-domain learning for a generalized model.
+    #### method: utilize variational attention to learn domain-specfic knowledge.
+    ***
 - <a name="CC-AV"></a>**[CC-AV]** Audio-Visual Transformer Based Crowd Counting (**ICCVW**) [[paper](https://arxiv.org/abs/2109.01926)]
+
+    #### utilizes auditory information to aid visual informaton. but how and why?
+    ***
 - <a name="BinLoss"></a>**[BinLoss]** Wisdom of (Binned) Crowds: A Bayesian Stratification Paradigm for Crowd Counting (**ACM MM**) [[paper](https://arxiv.org/abs/2108.08784)][[code](https://github.com/atmacvit/bincrowd)]![GitHub stars](https://img.shields.io/github/stars/atmacvit/bincrowd?label=Stars&logo=Github)
+
+    #### proposes a bayesian-based stratification method to decompose crowd counting task and a new loss function to combine MAE and MSE...
+    ***
 - <a name="C2MoT"></a>**[C2MoT]** Dynamic Momentum Adaptation for Zero-Shot Cross-Domain Crowd Counting (**ACM MM**) [[paper](https://dl.acm.org/doi/pdf/10.1145/3474085.3475230)][[code](https://github.com/jimmy-dq/C2MOT)]![GitHub stars](https://img.shields.io/github/stars/jimmy-dq/C2MOT?label=Stars&logo=Github)
+
+    #### zero-shot cross-domain crowd counting, in emergency, skip.
+    ***
 - <a name="ASNet"></a>**[ASNet]** Coarse to Fine: Domain Adaptive Crowd Counting via Adversarial Scoring Network (**ACM MM**) [[paper](https://arxiv.org/abs/2107.12858)]
+
+    #### domain adaptation method, skip.
+    ***
 - <a name="APAM"></a>**[APAM]** Towards Adversarial Patch Analysis and Certified Defense against Crowd Counting (**ACM MM**) [[paper](https://arxiv.org/abs/2104.10868)][[code](https://github.com/harrywuhust2022/Adv-Crowd-analysis)]![GitHub stars](https://img.shields.io/github/stars/harrywuhust2022/Adv-Crowd-analysis.svg?logo=github&label=Stars)
+
+    #### an evaluation method for certified defence.
+    ***
 - <a name="S3"></a>**[S3]** Direct Measure Matching for Crowd Counting (**IJCAI**) [[paper](https://www.ijcai.org/proceedings/2021/0116.pdf)]
+
+    #### directly uses point annotation to supervise the training process
+    #### proposes to use sinkhorn divergence as regressive loss which is more concentrated.
+    ***
 - <a name="BM-Count"></a>**[BM-Count]** Bipartite Matching for Crowd Counting with Point Supervision (**IJCAI**) [[paper](https://www.ijcai.org/proceedings/2021/0119.pdf)]
+
+    #### a bipartite matching loss and a ranking distribution learning framework to avoid the influence of density distribution.
+    ***
 - <a name="GLoss"></a>**[GLoss]** A Generalized Loss Function for Crowd Counting and Localization (**CVPR**) [[paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Wan_A_Generalized_Loss_Function_for_Crowd_Counting_and_Localization_CVPR_2021_paper.pdf)]
+
+    #### proving that l2 and bayesian loss are suboptimal of transport loss.
+    ***
 - <a name="CVCS"></a>**[CVCS]** Cross-View Cross-Scene Multi-View Crowd Counting (**CVPR**) [[paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Zhang_Cross-View_Cross-Scene_Multi-View_Crowd_Counting_CVPR_2021_paper.pdf)]
+
+    #### a work for multi-view crowd counting and the first one to perform cross-scene generalization.
+    ***
 - <a name="STANet"></a> **[STANet]** Detection, Tracking, and Counting Meets Drones in Crowds: A Benchmark (**CVPR**) [[paper](https://arxiv.org/abs/2105.02440)][[code](https://github.com/VisDrone/DroneCrowd)]![GitHub stars](https://img.shields.io/github/stars/VisDrone/DroneCrowd.svg?logo=github&label=Stars)
+
+    #### proposes a new video counting dataset and a framework to jointly perform detection, tracking and counting.
+    ***
 - <a name="RGBT-CC"></a> **[RGBT-CC]** Cross-Modal Collaborative Representation Learning and a Large-Scale RGBT Benchmark for Crowd Counting (**CVPR**) [[paper](https://arxiv.org/abs/2012.04529)][[code](https://github.com/chen-judge/RGBTCrowdCounting)]![GitHub stars](https://img.shields.io/github/stars/chen-judge/RGBTCrowdCounting.svg?logo=github&label=Stars)[[Project](http://lingboliu.com/RGBT_Crowd_Counting.html#)]
+
+    #### RGBT benchmark and a cross-modal collaborative representation learning.
+    ***
 - <a name="EDIREC-Net"></a> **[EDIREC-Net]** Error-Aware Density Isomorphism Reconstruction for Unsupervised Cross-Domain Crowd Counting (**AAAI**) [[paper](https://ojs.aaai.org/index.php/AAAI/article/view/16245)][[code](https://github.com/GehenHe/EDIREC-Net)]![GitHub stars](https://img.shields.io/github/stars/GehenHe/EDIREC-Net.svg?logo=github&label=Stars)
+
+    #### unsupervised domain adaptation task, skip temporarily.
+    ***
 - <a name="SASNet"></a> **[SASNet]** To Choose or to Fuse? Scale Selection for Crowd Counting (**AAAI**) [[paper](https://ojs.aaai.org/index.php/AAAI/article/view/16360)][[code](https://github.com/TencentYoutuResearch/CrowdCounting-SASNet)]![GitHub stars](https://img.shields.io/github/stars/TencentYoutuResearch/CrowdCounting-SASNet.svg?logo=github&label=Stars)
+
+    #### perfect idea, perfectly fit my idea. using weight patch-feature level matching to fit continuous density distribution. and utilize the idea like asnet to calculate loss function to realize multi-level optimization.
+    ***
 - <a name="UOT"></a> **[UOT]** Learning to Count via Unbalanced Optimal Transport (**AAAI**) [[paper](https://ojs.aaai.org/index.php/AAAI/article/view/16332)]
+
+    #### proposes to using unbalanced transport loss and present an optimization method.
+    ***
 - <a name="TopoCount"></a> **[TopoCount]**  Localization in the Crowd with Topological Constraints (**AAAI**) [[paper](https://ojs.aaai.org/index.php/AAAI/article/view/16170)][[code](https://github.com/ShahiraAbousamra/TopoCount)]![GitHub stars](https://img.shields.io/github/stars/ShahiraAbousamra/TopoCount.svg?logo=github&label=Stars)
+
+    #### uses topological reasoning to avoid the wrong clustered localization results.
+    ***
 - <a name="CFANet"></a> **[CFANet]** Coarse- and Fine-grained Attention Network with Background-aware Loss for Crowd Density Map Estimation (**WACV**) [[paper](https://arxiv.org/abs/2011.03721)][[code](https://github.com/rongliangzi/MARUNet)]![GitHub stars](https://img.shields.io/github/stars/rongliangzi/MARUNet.svg?logo=github&label=Stars)
+
+    #### coarse-to-fine-grained attention network to focus on crowd region and background aware loss to reduce the recognition.
+    ***
 - <a name="BSCC"></a> **[BSCC]** Understanding the impact of mistakes on background regions in crowd counting (**WACV**) [[paper](https://arxiv.org/abs/2003.13759)]
+
+    #### analyze the mistaken prediction on the background in depth.
+    #### add a simple segementation branch to alleviate the problem
+    ***
 - <a name="CFOCNet"></a> **[CFOCNet]** Class-agnostic Few-shot Object Counting (**WACV**) [[paper](https://winstonhsu.info/wp-content/uploads/2020/11/yang21class-agnostic.pdf)][[code](https://github.com/SinicaGroup/Class-agnostic-Few-shot-Object-Counting)]![GitHub stars](https://img.shields.io/github/stars/SinicaGroup/Class-agnostic-Few-shot-Object-Counting.svg?logo=github&label=Stars)
+
+    #### maybe the first one (new bing proved) proposes the new task::::::::::
+    ***
 - <a name="SCALNet"></a> **[SCALNet]** Dense Point Prediction: A Simple Baseline for Crowd Counting and Localization (**ICMEW**) [[paper](https://arxiv.org/abs/2104.12505)][[code](https://github.com/WangyiNTU/SCALNet)]![GitHub stars](https://img.shields.io/github/stars/WangyiNTU/SCALNet.svg?logo=github&label=Stars)
+
+    #### an end-to-end framework to handle counting and localization tasks with novel loss function.
+    ***
 - <a name="DSNet"></a> **[DSNet]** Dense Scale Network for Crowd Counting (**ICMR**) [[paper](https://arxiv.org/abs/1906.09707)][unofficial code: [PyTorch](https://github.com/rongliangzi/Dense-Scale-Network-for-Crowd-Counting)]![GitHub stars](https://img.shields.io/github/stars/rongliangzi/Dense-Scale-Network-for-Crowd-Counting.svg?logo=github&label=Stars)
+
+    #### emmmm, using dilated Conv with dense block. maybe. it is intuitive but not novel.
+    ***
 - <a name="FCVF"></a> **[FCVF]** Learning Factorized Cross-View Fusion for Multi-View Crowd Counting (**ICME**) [[paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9428284)]
+
+    #### as its title, cross-view fusion for multi-view counting.
+    ***
 - <a name="IDK"></a> **[IDK]** Leveraging Intra-Domain Knowledge to Strengthen Cross-Domain Crowd Counting (**ICME**) [[paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9428159)]
+
+    #### for cross-domain counting, leverage in-domain knowledge (from synthetic data). skip and no more details temporarily.
+    ***
 - <a name="CRANet"></a> **[CRANet]** CRANet: Cascade Residual Attention Network for Crowd Counting (**ICME**) [[paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9428236)]
+
+    #### proposes cascade residual attentoin to filter background noise.
+    ***
 
 ### Journal
 - <a name="DPDNet"></a>**[DPDNet]** Locating and Counting Heads in Crowds With a Depth Prior (**T-PAMI**) [[paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9601215)] [[code](https://github.com/svip-lab/Locating_Counting_with_a_Depth_Prior)]![GitHub stars](https://img.shields.io/github/stars/svip-lab/Locating_Counting_with_a_Depth_Prior.svg?logo=github&label=Stars)
@@ -1064,9 +1166,26 @@ Please refer to [this page](https://www.crowdbenchmark.com/nwpucrowd.html).
     #### proposes a crowd u-transformer
     #### proposes a loss function to focus more on the foreground.
     ***
+- <a name="CFANet"></a> **[CFANet]** Coarse- and Fine-grained Attention Network with Background-aware Loss for Crowd Density Map Estimation (**WACV**) [[paper](https://arxiv.org/abs/2011.03721)][[code](https://github.com/rongliangzi/MARUNet)]![GitHub stars](https://img.shields.io/github/stars/rongliangzi/MARUNet.svg?logo=github&label=Stars)
+
+    #### coarse-to-fine-grained attention network to focus on crowd region and background aware loss to reduce the recognition.
+    ***
+- <a name="BSCC"></a> **[BSCC]** Understanding the impact of mistakes on background regions in crowd counting (**WACV**) [[paper](https://arxiv.org/abs/2003.13759)]
+
+    #### analyze the mistaken prediction on the background in depth.
+    #### add a simple segementation branch to alleviate the problem
+    ***
+- <a name="CRANet"></a> **[CRANet]** CRANet: Cascade Residual Attention Network for Crowd Counting (**ICME**) [[paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9428236)]
+
+    #### proposes cascade residual attentoin to filter background noise.
+    ***
+-
 
 ### reasoning based method
--
+- <a name="TopoCount"></a> **[TopoCount]**  Localization in the Crowd with Topological Constraints (**AAAI**) [[paper](https://ojs.aaai.org/index.php/AAAI/article/view/16170)][[code](https://github.com/ShahiraAbousamra/TopoCount)]![GitHub stars](https://img.shields.io/github/stars/ShahiraAbousamra/TopoCount.svg?logo=github&label=Stars)
+
+    #### uses topological reasoning to avoid the wrong clustered localization results.
+    ***
 
 ### scale-related method
 - <a name="LoViTCrowd"></a>**[LoViTCrowd]** Improving Local Features with Relevant Spatial Information by Vision Transformer for Crowd Counting (**BMVC**) [[paper](https://bmvc2022.mpi-inf.mpg.de/0729.pdf)] [[code](https://github.com/nguyen1312/LoViTCrowd)]![GitHub stars](https://img.shields.io/github/stars/nguyen1312/LoViTCrowd.svg?logo=github&label=Stars)
