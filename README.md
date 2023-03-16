@@ -76,7 +76,7 @@ Note that all unpublished arXiv papers are not included in [the leaderboard of p
     ***
 - Mask Focal Loss for dense crowd counting with canonical object detection networks [[paper](https://arxiv.org/abs/2212.11542)]
 
-    #### defined a mask focal loss to perform dense crowd counting with canonical object detection mnetwork.
+    #### defined a mask focal loss to perform dense crowd counting with canonical object detection network.
     ***
 - CountingMOT: Joint Counting, Detection and Re-Identification for Multiple Object Tracking [[paper](https://arxiv.org/abs/2212.05861)]
 
@@ -120,7 +120,7 @@ Note that all unpublished arXiv papers are not included in [the leaderboard of p
 - Multi-scale Feature Aggregation for Crowd Counting [[paper](https://arxiv.org/abs/2208.05256)]
 
     #### multi-feature aggregation with short connection and skip connnection
-    #### seems its structure is too simple and compared with CVPR2020emmmm
+    #### seems its structure is too simple and it is compared with CVPR2020emmmm
     ***
 - Redesigning Multi-Scale Neural Network for Crowd Counting [[paper](https://arxiv.org/abs/2208.02894)][[code](https://github.com/ZPDu/Redesigning-Multi-Scale-Neural-Network-for-Crowd-Counting)]![GitHub stars](https://img.shields.io/github/stars/ZPDu/Redesigning-Multi-Scale-Neural-Network-for-Crowd-Counting.svg?logo=github&label=Stars)
 
@@ -319,7 +319,7 @@ Note that all unpublished arXiv papers are not included in [the leaderboard of p
 - <a name="BLA"></a>**[BLA]** Bi-level Alignment for Cross-Domain Crowd Counting (**CVPR**) [[paper](https://arxiv.org/abs/2205.05844)][[code](https://github.com/Yankeegsj/BLA)]![GitHub stars](https://img.shields.io/github/stars/Yankeegsj/BLA.svg?logo=github&label=Stars)
 
     #### bi-level alignment: task-driven data alignment, fine-grained feature alignment(foreground and background).
-    ### maybe the fine-grained feature alignment can be referred.
+    #### maybe the fine-grained feature alignment can be referred.
     ***
 - <a name="BMNet"></a>**[BMNet]** Represent, Compare, and Learn: A Similarity-Aware Framework for Class-Agnostic Counting (**CVPR**)[[paper](https://arxiv.org/abs/2203.08354)][[code](https://github.com/flyinglynx/Bilinear-Matching-Network)]![GitHub stars](https://img.shields.io/github/stars/flyinglynx/Bilinear-Matching-Network.svg?logo=github&label=Stars)
 
@@ -459,6 +459,8 @@ Note that all unpublished arXiv papers are not included in [the leaderboard of p
     #### emmmm, a survy on crowd counting, wow.
     ***
 
+# 77 papers
+
 ### 2021
 ### Conference
 - <a name="GNet"></a>**[GNet]** Gaussian map predictions for 3D surface feature localisation and counting (**BMVC**) [[paper](https://www.bmvc2021-virtualconference.com/assets/papers/1417.pdf)]
@@ -596,7 +598,7 @@ Note that all unpublished arXiv papers are not included in [the leaderboard of p
     #### proposes cascade residual attentoin to filter background noise.
     ***
 
-# above all, about 111 papers
+# above all, about 109 papers
 
 ### Journal
 - <a name="DPDNet"></a>**[DPDNet]** Locating and Counting Heads in Crowds With a Depth Prior (**T-PAMI**) [[paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9601215)] [[code](https://github.com/svip-lab/Locating_Counting_with_a_Depth_Prior)]![GitHub stars](https://img.shields.io/github/stars/svip-lab/Locating_Counting_with_a_Depth_Prior.svg?logo=github&label=Stars)
@@ -683,7 +685,8 @@ Note that all unpublished arXiv papers are not included in [the leaderboard of p
 
     #### emmm special field.... maybe i can read it later......... corn... remind me of......
     ***
-# sum up to xxx papers
+# sum up to 130 papers
+#### now let classify them.
 
 ### 2020
 ### Conference
@@ -1232,6 +1235,23 @@ Please refer to [this page](https://www.crowdbenchmark.com/nwpucrowd.html).
     #### proposes a crowd u-transformer
     #### proposes a loss function to focus more on the foreground.
     ***
+- <a name="HDNet"></a>**[HDNet]** HDNet: A Hierarchically Decoupled Network for Crowd Counting (**ICME**) [[paper](https://arxiv.org/abs/2212.05722)]
+
+    #### decomposes the image counting task into background decomposing, foreground density decomposing, and introduces three interactions to compensate for the ignored correlation between the subtasks.
+    ***
+- <a name="RAN"></a>**[RAN]** Region-Aware Network: Model Human’s Top-Down Visual Perception Mechanism for Crowd Counting (**Neural Networks**) [[paper](https://arxiv.org/abs/2106.12163)]
+
+    #### applies a top-down structure and tells the story well. I am not sure whether it completes the top-down structure that can allocate attention reasonably.
+    ***
+- <a name="SGANet"></a>**[SGANet]** Crowd Counting via Segmentation Guided Attention Networks and Curriculum Loss (**TITS**) [[paper](https://ieeexplore.ieee.org/document/9678116)]
+
+    #### emmm, the revision is to replace vgg with inception-v3??? one more segmentation guided module and a curriculum loss are added......
+    #### maybe the segmentation guided module is worth reading...
+    ***
+- <a name="HANet"></a>**[HANet]** Hybrid attention network based on progressive embedding scale-context for crowd counting (**Information Sciences**) [[paper](https://arxiv.org/abs/2106.02324)]
+
+    #### apply paralleling spatial attention and channel attention to sovle the background noise and scaling problems simultaneously.
+    ***
 - <a name="CFANet"></a> **[CFANet]** Coarse- and Fine-grained Attention Network with Background-aware Loss for Crowd Density Map Estimation (**WACV**) [[paper](https://arxiv.org/abs/2011.03721)][[code](https://github.com/rongliangzi/MARUNet)]![GitHub stars](https://img.shields.io/github/stars/rongliangzi/MARUNet.svg?logo=github&label=Stars)
 
     #### coarse-to-fine-grained attention network to focus on crowd region and background aware loss to reduce the recognition.
@@ -1298,5 +1318,17 @@ Please refer to [this page](https://www.crowdbenchmark.com/nwpucrowd.html).
     #### finds the reasons why classification methods show better performance than regression methods: inaccurate dot annotation and inappropriate gaussian kernel.
     #### futhermore, proposes a discrete regression method to avoid these problems.
     ***
+- Redesigning Multi-Scale Neural Network for Crowd Counting [[paper](https://arxiv.org/abs/2208.02894)][[code](https://github.com/ZPDu/Redesigning-Multi-Scale-Neural-Network-for-Crowd-Counting)]![GitHub stars](https://img.shields.io/github/stars/ZPDu/Redesigning-Multi-Scale-Neural-Network-for-Crowd-Counting.svg?logo=github&label=Stars)
+
+    #### designs many complicated structures to solve the scaling problem
+    #### merge multi-scale feature, expert scheme, soft gating and loss fuc. kind of interesting and maybe can be reffered.
+    ***
+
+### survey
+- Revisiting Crowd Counting: State-of-the-art, Trends, and Future Perspectives (**Image and Vision Computing**) [[paper](https://arxiv.org/abs/2209.07271)]
+
+    #### A survey paper, relatively new, maybe can relief my work.
+    ***
+
 
 ### mapping and counting: a new trial
