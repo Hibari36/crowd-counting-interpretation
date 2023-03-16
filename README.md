@@ -596,28 +596,94 @@ Note that all unpublished arXiv papers are not included in [the leaderboard of p
     #### proposes cascade residual attentoin to filter background noise.
     ***
 
+# above all, about 111 papers
+
 ### Journal
 - <a name="DPDNet"></a>**[DPDNet]** Locating and Counting Heads in Crowds With a Depth Prior (**T-PAMI**) [[paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9601215)] [[code](https://github.com/svip-lab/Locating_Counting_with_a_Depth_Prior)]![GitHub stars](https://img.shields.io/github/stars/svip-lab/Locating_Counting_with_a_Depth_Prior.svg?logo=github&label=Stars)
+
+    #### using RGB-D data, skip.
+    ***
 - <a name="EPF"></a>**[EPF]** Counting People by Estimating People Flows (**TPAMI**) [[paper](https://arxiv.org/abs/2012.00452)][[code](https://github.com/weizheliu/People-Flows)]![GitHub stars](https://img.shields.io/github/stars/weizheliu/People-Flows.svg?logo=github&label=Stars)
+
+    #### utilize people flow in video sequences. skip.
+    ***
 - <a name="LA-Batch"></a>**[LA-Batch]** Locality-Aware Crowd Counting (**TPAMI**) [[paper](https://www.computer.org/csdl/journal/tp/5555/01/09346018/1qV39sNsjWU)]
+
+    #### proposes two seperated modules to divide image patches and perform data augmentation according to loss.
+    ***
 - <a name="AutoScale"></a>**[AutoScale]** AutoScale: Learning to Scale for Crowd Counting (**IJCV**) [[paper](https://link.springer.com/article/10.1007/s11263-021-01542-z)] (extension of [L2SM](#L2SM))[[code](https://github.com/dk-liang/AutoScale)]![GitHub stars](https://img.shields.io/github/stars/dk-liang/AutoScale.svg?logo=github&label=Stars)
+
+    #### learn to scale, seperate the overlapped blob. alleviate the problem in density map.
+    ***
 - <a name="DSACA"></a>**[DSACA]** Dilated-Scale-Aware Attention ConvNet For Multi-Class Object Counting  (**SPL**) [[paper](https://ieeexplore.ieee.org/abstract/document/9479708)] [[code](https://github.com/PRIS-CV/DSACA)]![GitHub stars](https://img.shields.io/github/stars/PRIS-CV/DSACA.svg?logo=github&label=Stars)
+
+    #### emmm, multi-object counting with dilated convolution and etc.
+    ***
 - <a name="NLT"></a> **[NLT]** Neuron Linear Transformation: Modeling the Domain Shift for Crowd Counting (**T-NNLS**) [[paper](https://arxiv.org/abs/2004.02133)] [[code]](https://github.com/taohan10200/NLT)]![GitHub stars](https://img.shields.io/github/stars/taohan10200/NLT.svg?logo=github&label=Stars)
+
+    #### domain shift for crowd counting. skip it. 
+    ***
 - <a name="DACC"></a> **[DACC]** Domain-Adaptive Crowd Counting via High-Quality Image Translation and Density Reconstruction (**T-NNLS**) [[paper](https://arxiv.org/abs/1912.03677)]
+
+    #### domain adaptation. skip.
+    ***
 - <a name="MATT"></a> **[MATT]** Towards Using Count-level Weak Supervision for Crowd Counting (**Pattern Recognition**) [[paper](https://arxiv.org/abs/2003.00164)]
+
+    #### count-level weak supervision for counting. small amount position annotation and large amount number annotation.
+    ***
 - <a name="D2C"></a> **[D2C]** Decoupled Two-Stage Crowd Counting and Beyond (**TIP**) [[paper](https://ieeexplore.ieee.org/document/9347700)][[code](https://github.com/hustaia/Decoupled_Two-Stage_Counting)]![GitHub stars](https://img.shields.io/github/stars/hustaia/Decoupled_Two-stage_Counting.svg?logo=github&label=Stars)
+
+    #### decouple the counting task into two stage, probability map estimation (can be called foreground/background segment maybe) and counting number estimation. the countor can learn from synthetic data.
+    ***
 - <a name="TBC"></a> **[TBC]** Tracking-by-Counting: Using Network Flows on Crowd Density Maps for Tracking Multiple Targets (**TIP**) [[paper](https://ieeexplore.ieee.org/document/9298464)]
+
+    #### counting for tracking... skip
+    ***
 - <a name="FGCC"></a> **[FGCC]** Fine-Grained Crowd Counting (**TIP**) [[paper](https://arxiv.org/abs/2007.06146)]
+
+    #### fine-grained counting more than counting... attirbutes.
+    ***
 - <a name="PSODC"></a> **[PSODC]** A Self-Training Approach for Point-Supervised Object Detection and Counting in Crowds (**TIP**) [[paper](https://arxiv.org/abs/2007.12831)][[code](https://github.com/WangyiNTU/Point-supervised-crowd-detection)]![GitHub stars](https://img.shields.io/github/stars/WangyiNTU/Point-supervised-crowd-detection.svg?logo=github&label=Stars)
+
+    #### a self-training method for object detection and crwod counting with point annotations.
+    ***
 - <a name="EPA"></a> **[EPA]** Embedding Perspective Analysis Into Multi-Column Convolutional Neural Network for Crowd Counting (**TIP**) [[paper](https://ieeexplore.ieee.org/document/9293174)]
+
+    #### analyzes the perspective embedding and group the scene to solve the scaling problem.
+    ***
 - <a name="PFDNet"></a>**[PFDNet]** Crowd Counting via Perspective-Guided Fractional-Dilation Convolution (**TMM**) [[paper](https://ieeexplore.ieee.org/document/9468694)](extension of [PGCNet](#PGCNet))
+
+    #### focuses on fractional-dilation, the specific implementation is unknown.
+    ***
 - <a name="STDNet"></a> **[STDNet]** Spatiotemporal Dilated Convolution with Uncertain Matching for Video-based Crowd Estimation (**TMM**) [[paper](https://arxiv.org/abs/2101.12439)]
+
+    #### counting for video. decomposition of 3D convolution and the application of dilated convolution.
+    ***
 - <a name="AdaCrowd"></a> **[AdaCrowd]** AdaCrowd: Unlabeled Scene Adaptation for Crowd Counting (**TMM**) [[paper](https://arxiv.org/abs/2010.12141)][[code](https://github.com/maheshkkumar/adacrowd)]![GitHub stars](https://img.shields.io/github/stars/maheshkkumar/adacrowd.svg?logo=github&label=Stars)
+
+    #### scene adptation with unlabel data. focus on a specific scene.
+    ***
 - <a name="DCANet"></a>**[DCANet]** Towards Learning Multi-domain Crowd Counting (**T-CSVT**) [[paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9658506)] [[code](https://github.com/Zhaoyi-Yan/DCANet)]![GitHub stars](https://img.shields.io/github/stars/Zhaoyi-Yan/DCANet.svg?logo=github&label=Stars)
+
+    #### using one model to adapt to multi-domain.
+    ***
 - <a name="PDANet"></a> **[PDANet]** PDANet: Pyramid Density-aware Attention Net for Accurate Crowd Counting (**Neurocomputing**) [[paper](https://arxiv.org/abs/2001.05643)]
+
+    #### pyramid structure for multi-scale and density-aware decoder to divide density level. at last, sum up with attention.
+    ***
 - <a name="ScSiNet"></a> **[ScSiNet]** Interlayer and Intralayer Scale Aggregation for Scale-invariant Crowd Counting (**Neurocomputing**) [[paper](https://arxiv.org/abs/2005.11943)]
+
+    #### try to extract scale-invariant feature with specific transformation. propose a randomly intergrated loss to fit the density shift.
+    ***
 - <a name="PRM"></a> **[PRM]** Towards More Effective PRM-based Crowd Counting via A Multi-resolution Fusion and Attention Network (**Neurocomputing**) [[paper](https://arxiv.org/abs/2112.09664)]
+
+    #### fuse multi-resolution feature and utilize orginal feature to extract foreground to fusion.......
+    ***
 - <a name="DeepCorn"></a> **[DeepCorn]** DeepCorn: A Semi-Supervised Deep Learning Method for High-Throughput Image-Based Corn Kernel Counting and Yield Estimation (**Knowledge-Based Systems**) [[paper](https://arxiv.org/abs/2007.10521)]
+
+    #### emmm special field.... maybe i can read it later......... corn... remind me of......
+    ***
+# sum up to xxx papers
 
 ### 2020
 ### Conference
@@ -1179,6 +1245,10 @@ Please refer to [this page](https://www.crowdbenchmark.com/nwpucrowd.html).
 
     #### proposes cascade residual attentoin to filter background noise.
     ***
+- <a name="D2C"></a> **[D2C]** Decoupled Two-Stage Crowd Counting and Beyond (**TIP**) [[paper](https://ieeexplore.ieee.org/document/9347700)][[code](https://github.com/hustaia/Decoupled_Two-Stage_Counting)]![GitHub stars](https://img.shields.io/github/stars/hustaia/Decoupled_Two-stage_Counting.svg?logo=github&label=Stars)
+
+    #### decouple the counting task into two stage, probability map estimation (can be called foreground/background segment maybe) and counting number estimation. the countor can learn from synthetic data.
+    ***
 -
 
 ### reasoning based method
@@ -1212,6 +1282,13 @@ Please refer to [this page](https://www.crowdbenchmark.com/nwpucrowd.html).
 - <a name="CLTR"></a>**[CLTR]** An End-to-End Transformer Model for Crowd Localization (**ECCV**) [[paper](https://arxiv.org/abs/2202.13065)] [[code](https://github.com/dk-liang/CLTR)]![GitHub stars](https://img.shields.io/github/stars/dk-liang/CLTR.svg?logo=github&label=Stars)[[project](https://dk-liang.github.io/CLTR/)]
 
     #### apply set prediction paradigm for the crowd localization task with KMO based macher.
+    ***
+-
+
+### point supervision
+- <a name="PSODC"></a> **[PSODC]** A Self-Training Approach for Point-Supervised Object Detection and Counting in Crowds (**TIP**) [[paper](https://arxiv.org/abs/2007.12831)][[code](https://github.com/WangyiNTU/Point-supervised-crowd-detection)]![GitHub stars](https://img.shields.io/github/stars/WangyiNTU/Point-supervised-crowd-detection.svg?logo=github&label=Stars)
+
+    #### a self-training method for object detection and crwod counting with point annotations.
     ***
 -
 
