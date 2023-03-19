@@ -1269,7 +1269,7 @@ Please refer to [this page](https://www.crowdbenchmark.com/nwpucrowd.html).
 
     #### decouple the counting task into two stage, probability map estimation (can be called foreground/background segment maybe) and counting number estimation. the countor can learn from synthetic data.
     ***
--
+- <a name="RRSP"></a> **[RRSP]** Residual Regression with Semantic Prior for Crowd Counting (**CVPR**) [[paper](http://openaccess.thecvf.com/content_CVPR_2019/papers/Wan_Residual_Regression_With_Semantic_Prior_for_Crowd_Counting_CVPR_2019_paper.pdf)][[code](https://github.com/jia-wan/ResidualRegression-pytorch)] ![GitHub stars](https://img.shields.io/github/stars/jia-wan/ResidualRegression-pytorch.svg?logo=github&label=Stars)
 
 ### reasoning based method
 - <a name="TopoCount"></a> **[TopoCount]**  Localization in the Crowd with Topological Constraints (**AAAI**) [[paper](https://ojs.aaai.org/index.php/AAAI/article/view/16170)][[code](https://github.com/ShahiraAbousamra/TopoCount)]![GitHub stars](https://img.shields.io/github/stars/ShahiraAbousamra/TopoCount.svg?logo=github&label=Stars)
